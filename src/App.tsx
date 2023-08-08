@@ -1,23 +1,29 @@
+import Bank from "./Components/Bank";
+import DrumButtons from "./Components/DrumButtons";
+import DrumTitle from "./Components/DrumTitle";
+import Footer from "./Components/Footer";
+import Power from "./Components/Power";
+import Volume from "./Components/Volume";
+import DrumLogo from "./assets/DrumLogo";
+
 function App() {
   return (
     <>
-      <div id="Drum-machine">
-        <div id="keys">
-          <div>q</div>
-          <div>w</div>
-          <div>e</div>
-          <div>a</div>
-          <div>s</div>
-          <div>d</div>
-          <div>z</div>
-          <div>x</div>
-          <div>c</div>
+      <div className="flex flex-col justify-center items-center h-screen bg-gray-500">
+        <div
+          id="Drum-machine"
+          className="flex border-4 border-solid border-yellow-400 w-[700px] h-[320px] bg-gray-400 m-5"
+        >
+          <DrumButtons />
+          <div className="flex flex-col w-[280px]">
+            <DrumLogo />
+            <Power />
+            <DrumTitle />
+            <Volume />
+            <Bank />
+          </div>
         </div>
-        <div>Logo</div>
-        <div>Power</div>
-        <div>Drum Title</div>
-        <div>Volume</div>
-        <div>Bank Nodle</div>
+        <Footer />
       </div>
     </>
   );

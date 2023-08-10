@@ -15,8 +15,8 @@ function App() {
           className="flex border-4 border-solid border-yellow-400 w-[700px] h-[320px] bg-gray-400 m-5"
         >
           <DrumButtons />
-          <div className="flex flex-col w-[280px]">
-            <DrumLogo />
+          <DrumLogo />
+          <div className="flex justify-center items-center flex-col w-[280px]">
             <Power />
             <DrumTitle />
             <Volume />

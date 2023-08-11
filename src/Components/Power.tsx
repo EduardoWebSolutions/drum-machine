@@ -12,7 +12,7 @@ const Power = () => {
   return (
     <div className="flex justify-center w-full">
       <div>
-        <p className="font-bold">Power</p>
+        <p className="font-bold select-none">Power</p>
         <div className="bg-black h-[20px] w-[50px] flex justify-center items-center">
           <div
             className="bg-blue-600 h-4 w-[23px] my-3 cursor-pointer"
